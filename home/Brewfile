@@ -1,12 +1,10 @@
+tap "ameshkov/tap"
 tap "buo/cask-upgrade"
 tap "derailed/k9s"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "jsdelivr/globalping"
 tap "lihaoyun6/tap"
-tap "th-ch/youtube-music"
 # Simple, modern, secure file encryption
 brew "age"
 # Mozilla CA certificate store
@@ -33,6 +31,10 @@ brew "chezmoi"
 brew "curl"
 # Tool for exploring each layer in a docker image
 brew "dive"
+# Modern, maintained replacement for ls
+brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
@@ -57,8 +59,6 @@ brew "libksba"
 brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # Command-line interface for Hetzner Cloud
 brew "hcloud"
 # Improved top (interactive process viewer)
@@ -85,8 +85,8 @@ brew "libzip"
 brew "mas"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
-# Fast, highly customisable system info script
-brew "neofetch"
+# NCurses Disk Usage
+brew "ncdu"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Open source visual route tracking CLI tool
@@ -95,6 +95,8 @@ brew "nexttrace"
 brew "nmap"
 # Platform built on V8 to build network applications
 brew "node@20"
+# Simplified-traditional Chinese conversion tool
+brew "opencc"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
@@ -103,12 +105,14 @@ brew "pipx"
 brew "pnpm"
 # Object-relational database system
 brew "postgresql@15"
-# Modern replacement for ps written by Rust
+# Modern replacement for ps written in Rust
 brew "procs"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Fast, efficient and secure backup program
+brew "restic"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Generate type safe Go from SQL
@@ -127,6 +131,8 @@ brew "tokei"
 brew "trash"
 # Network diagnostic tool, inspired by mtr
 brew "trippy"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
 # Generate WireGuard profile from Cloudflare Warp account
 brew "wgcf"
 # Lookup tool for domain names and other internet resources
@@ -135,25 +141,27 @@ brew "whois"
 brew "xdg-ninja", args: ["HEAD"]
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
-# Pluggable terminal workspace, with terminal multiplexer as the base feature
-brew "zellij"
-# Kubernetes CLI To Manage Your Clusters In Style!
-brew "derailed/k9s/k9s"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 brew "jsdelivr/globalping/globalping"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Android SDK component
 cask "android-platform-tools"
 # Display management tool
 cask "betterdisplay"
 # Free app that makes your Internet safer
 cask "cloudflare-warp"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Voice and text chat software
 cask "discord"
 # Collaborative team software
 cask "figma"
+# Information browser
+cask "follow"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono-nerd-font"
 cask "font-hack-nerd-font"
@@ -161,8 +169,6 @@ cask "font-inconsolata-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-lxgw-wenkai"
 cask "font-sauce-code-pro-nerd-font"
-# Desktop automation application
-cask "hammerspoon"
 # Free and open-source media player
 cask "iina"
 # Open-source keystroke visualiser
@@ -177,12 +183,8 @@ cask "quicklook-json"
 cask "quickrecorder"
 # Open source virtual/remote desktop application
 cask "rustdesk"
-# Standalone client for sing-box, the universal proxy platform
-cask "sfm"
 # Rime input method engine
 cask "squirrel"
-# Real time file synchronisation software
-cask "syncthing"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin@21"
 # Cloud video conferencing
@@ -191,18 +193,20 @@ cask "tencent-meeting"
 cask "webpquicklook"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
-# YouTube Music Desktop App
-cask "youtube-music"
+# Administration tool for MikroTik RouterOS
+cask "winbox"
+# Gecko based web browser
+cask "zen-browser"
 mas "APTV", id: 1630403500
 mas "Bob", id: 1630034110
 mas "Cubox", id: 1113361350
 mas "LocalSend", id: 1661733229
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "PasteNow", id: 1552536109
 mas "Stay", id: 1591620171
 mas "Tailscale", id: 1475387142
 mas "TestFlight", id: 899247664
 mas "TickTick", id: 966085870
+mas "Windows App", id: 1295203466
 vscode "astro-build.astro-vscode"
 vscode "bradlc.vscode-tailwindcss"
 vscode "chakrounanas.turbo-console-log"
